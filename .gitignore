@@ -1,11 +1,19 @@
-# Build and Release Folders
-bin/
-bin-debug/
-bin-release/
-
-# Other files and folders
-.settings/
-
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+.gitignore
+# Exclude the .htaccess file
+.htaccess
+# Exclude any PSD/AI source
+*.psd
+*.ai
+# Exclude the build products
+build/*
+*.[oa]
+# Exclude OS X folder attributes
+.DS_Store
+# Exclude Text Files
+*.txt
+# Except read me
+!README.txt
+# Exclude log files
+*.log
+# Exclude Fonts
+_fonts/
