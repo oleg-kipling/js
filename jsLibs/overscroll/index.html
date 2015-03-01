@@ -7,27 +7,37 @@
   <meta charset="UTF-8">
   <title>Overscroll.js</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <script type="text/javascript" src="js/custom_index.js"></script>
+  <script type="text/javascript" src="js/overscroll.js"></script>
   <script type="text/javascript"></script>
   <style>
-	.easter-egg {
-		/*Dimension*/
-		width: 300px;
-		height: 500px;
+  	.easter-egg {
+  		/*Dimension*/
+		width: 750px;
+		height: 390px;
 
 		/*Fixed Position*/
 		position: fixed;
 		left: 50%;
-		top: 0px;
-		
+
 		/*Centered horizontally, and hidden above screen*/
-		margin-left: -150px;
-		margin-top: -500px;
-	}
+		margin-left: -250px;
+  	}
+	.top-cat { top: -390px; }
+	.bottom-cat { bottom: -390px; }
   </style>
 </head>
 <body>
 	<!-- Any element work, really -->
-	<img src="awesome-source.png" class="easter-egg">
+	<img class="easter-egg top-cat" src="img/cat-1.png">
+	<img class="easter-egg bottom-cat" src="img/cat-2.png">
+
+	<script>
+		var overscroll = new Overscroll();
+
+		window.onload = function () {
+			overscroll.bindElement(document.querySelector('.top-cat'), 'top', 5);
+			overscroll.bindElement(document.querySelector('.bottom-cat'), 'bottom', 5);
+		}
+	</script>
 </body>
 </html>
