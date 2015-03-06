@@ -1,0 +1,42 @@
+<!-- https://github.com/tholman/overscroll -->
+<!-- http://tholman.com/overscroll/ -->
+
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Sticker.js</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  	<script type="text/javascript" src="js/sticker.js"></script>
+  <style>
+	.sticker {
+		width: 180px;
+		height: 180px;
+	}
+
+	.example-1 .sticker-img {
+		background-image: url(img/hero.png);
+	}
+
+	.example-2 .sticker-img {
+		background-image: url(img/cat.png);
+	}
+
+	.example-3 .sticker-img {
+		background-color:#ff4a85;
+	}
+
+	.example-3 .sticker-shadow {
+		opacity: 0.6;
+	}	
+  </style>
+</head>
+<body>
+	<div class="sticker example-1"></div>
+	<div class="sticker example-2"></div>
+	<div class="sticker example-3"></div>
+	<script>
+		Sticker.init('.sticker');
+	</script>
+</body>
+</html>
