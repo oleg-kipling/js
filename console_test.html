@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Console Test</title>
+</head>
+<body>
+	<p id="line">Click the button and see the message if the time is less than 21:00.</p>
+	<button onclick="myFunction() ">Hit me!</button>
+	<p id="sample"></p>
+
+	<script>
+		function myFunction () {
+			var x = "";
+			var time = new Date().getHours();
+			if (time < 21) {
+				myMessage = "It's a Fine Day!";
+			}
+			document.getElementById("sample").innerHTML=myMessage;
+		}
+	</script>
+</body>
+</html>
