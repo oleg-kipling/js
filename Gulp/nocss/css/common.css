@@ -1,0 +1,15 @@
+body {
+	background: linear-gradient(45deg, red, blue);
+}
+
+h1 {
+	color: #ccc;
+}
+
+h2 {
+	color: #666;
+}
+
+p{
+	color: green;
+}
