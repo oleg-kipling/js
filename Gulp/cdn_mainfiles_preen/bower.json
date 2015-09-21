@@ -1,0 +1,21 @@
+{
+  "name": "mysite",
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "jquery": "~2.1.1"
+  },
+"overrides" : {
+    	"bootstrap" : {
+    		"main" : [
+    			"./dist/js/bootstrap.min.js",
+    			"./dist/css/bootstrap.min.css",
+    			"./dist/css/bootstrap-theme.min.css"
+    		]
+    	}
+    },
+ "preen" : {
+ 	"jquery" : [
+ 		"dist/*.js"
+ 	]
+  }
+}
